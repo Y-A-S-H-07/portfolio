@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Yash Dabhekar Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+      /*====================== About / Skills ======================*/
+      .about-info p {
+        margin: 0.5rem 0;
+        font-size: 16px;
+      }
+
+      /* Typing animation */
+      #typing-animation {
+        font-size: 28px;
+        font-weight: bold;
+        color: white;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+
+      /* Project image zoom effect */
+      .zoom-effect {
+        overflow: hidden;
+        transition: transform 0.3s ease-out;
+      }
+      .zoom-effect:hover {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Yash Dabhekar</a>
+        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav nav ml-auto">
+            <li class="nav-item"><a href="#home-section" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#about-section" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#resume-section" class="nav-link">Resume</a></li>
+            <li class="nav-item"><a href="#project-section" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="#contact-section" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home-section" class="hero">
+      <div class="home-slider owl-carousel">
+        <div class="slider-item">
+          <div class="overlay"></div>
+          <div class="container">
+            <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end">
+              <div class="one-third js-fullheight order-md-last img" style="background-image:url('images/bg_1.png');">
+                <div class="overlay"></div>
+              </div>
+              <div class="one-forth d-flex align-items-center ftco-animate">
+                <div class="text">
+                  <span class="subheading">Hello!</span>
+                  <h1 class="mb-4 mt-3">I'm <span>Yash Dabhekar</span></h1>
+
+                  <!-- Typing animation -->
+                  <span id="typing-animation"></span>
+                  <script>
+                    const typingAnimationElement = document.getElementById('typing-animation');
+                    const typingTexts = ['IT Engineering Student'];
+                    let index = 0;
+                    let charIndex = 0;
+
+                    function typeText() {
+                      if (charIndex < typingTexts[index].length) {
+                        typingAnimationElement.textContent += typingTexts[index].charAt(charIndex);
+                        charIndex++;
+                        setTimeout(typeText, 150);
+                      } else {
+                        setTimeout(() => {
+                          typingAnimationElement.textContent = '';
+                          index = (index + 1) % typingTexts.length;
+                          charIndex = 0;
+                          typeText();
+                        }, 2000);
+                      }
+                    }
+
+                    typeText();
+                  </script>
+
+                  <br><br>
+                  <h2>Pune, Maharashtra</h2>
+                  <p>
+                    <a href="https://github.com/Y-A-S-H-07/" class="btn btn-white btn-outline-white py-3 px-4">GitHub</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <!-- About Section -->
+<!-- About Section -->
+<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+  <div class="container">
+    <div class="row d-flex align-items-stretch">
+      
+      <div class="col-md-12 col-lg-12 pl-lg-5 pb-5"> <div class="row justify-content-start pb-3">
+          <div class="col-md-12 heading-section ftco-animate">
+            <h1 class="big">About</h1>
+            <h2 class="mb-4">About Me</h2>
+            <p>
+              Enthusiastic IT engineering student passionate about technology, data, and innovation. Skilled in MERN stack development and analysis, aspiring to work as an Associate Analyst to bridge the gap between data insights and impactful digital solutions.
+              modern frameworks, and applying them in real-world projects.
+            </p>
+
+            <div class="about-info mt-4">
+              <p><strong>Location:</strong> Pune, Maharashtra</p>
+              <p><strong>Email:</strong> yashdabhekar007@gmail.com</p>
+              <p><strong>Interests:</strong> Web Development, Travel, Teaching</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+ <!-- Resume Section -->
+<<section class="ftco-section ftco-no-pb" id="resume-section">
+  <div class="container">
+    <div class="row justify-content-center pb-5">
+      <div class="col-md-10 heading-section text-center ftco-animate">
+        <h1 class="big big-2">Resume</h1>
+        <h2 class="mb-4">My Resume</h2>
+        <p>Here is a quick summary of my education, experience, and achievements.</p>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="row">
+          <div class="col-md-6">
+            <h3 class="mb-4">Education</h3>
+            <div class="resume-wrap ftco-animate">
+              <span class="date">2021 - 2025</span>
+              <h2>Bachelor of Engineering (Information Technology)</h2>
+              <span class="position">Savitribai Phule Pune University</span>
+              <p class="mt-2">Currently pursuing IT Engineering with a focus on web development, databases, machine learning, and data analysis.</p>
+            </div>
+            <div class="resume-wrap ftco-animate">
+              <span class="date">2019 - 2021</span>
+              <h2>Higher Secondary (Science)</h2>
+              <span class="position">State Board of Maharashtra</span>
+              <p class="mt-2">Completed with strong foundation in Mathematics, Physics, and Chemistry.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <h3 class="mb-4">Experience</h3>
+            <div class="resume-wrap ftco-animate">
+              <span class="date">2024</span>
+              <h2>Web Development Intern</h2>
+              <span class="position">Bootcoding</span>
+              <p class="mt-2">Worked on full-stack projects using MERN stack. Designed responsive UIs and built REST APIs.</p>
+            </div>
+            <div class="resume-wrap ftco-animate">
+              <span class="date">2023</span>
+              <h2>College Projects</h2>
+              <ul>
+                <li>Developed a virtual assistant using the Gemini API for intelligent and interactive user responses.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row mt-5">
+    <div class="col-md-12">
+        <h3 class="mb-4">Certifications</h3>
+        
+        <div class="resume-wrap ftco-animate">
+            <span class="date">October 27, 2025 (Valid until October 27, 2027)</span>
+            <h2>Oracle Cloud Infrastructure 2025 Certified Developer Professional</h2>
+            <span class="position">Oracle Certified Professional (Issued by Oracle University)</span>
+            <p class="mt-2">Recognized by Oracle Corporation as an Oracle Certified Professional for proficiency in Oracle Cloud Infrastructure.</p>
+            <p class="mt-2" style="font-size: smaller;">*Certification ID: 102937454OCID25CP*</p>
+        </div>
+
+        <div class="certification-image mt-4 mb-5 text-center ftco-animate">
+            <a href="eCertificate.pdf" target="_blank" title="View Full Oracle Certificate">
+                <img 
+                    src="images/certificate.png" 
+                    alt="Oracle Certified Professional Certificate" 
+                    class="img-fluid rounded zoom-effect" 
+                    style="max-width: 350px; border: 2px solid #007bff; cursor: pointer;"
+                >
+            </a>
+            <p class="mt-2 text-muted">Click the certificate to open the original PDF file.</p>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+    
+    <div class="row mt-5">
+      <div class="col-md-12 heading-section text-center ftco-animate">
+        <h2 class="mb-4">Skills</h2>
+      </div>
+      <div class="col-md-6">
+        <ul>
+          <li>Programming & Development: HTML, CSS, JavaScript, React.js, Node.js, Express.js, MongoDB</li>
+          <li>Data Analysis Tools: SQL, Excel, Python (Pandas, NumPy), Power BI, Tableau</li>
+          <li>Core Analytical Skills: Data Cleaning, Data Visualization, Statistical Analysis, Problem Solving</li>
+          <li>Soft Skills: Critical Thinking, Attention to Detail, Communication, Teamwork</li>
+        </ul>
+      </div>
+      <div class="col-md-6"> 
+        <ul>
+          <li>Other: Python, Git/GitHub, REST APIs</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-6 text-center ftco-animate">
+        <p><a href="resume/Yash_Dabhekar_CV.pdf" class="btn btn-primary py-4 px-5" download>Download CV</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+   <!-- Projects Section -->
+<section class="ftco-section" id="project-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-5">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <h1 class="big big-2">Projects</h1>
+        <h2 class="mb-4">My Projects</h2>
+        <p>Showcasing my work in AI, web development, and data analysis.</p>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="row d-flex">
+
+          <div class="col-md-6 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <div id="virtualAssistantCarousel" class="carousel slide block-20" data-ride="carousel" data-interval="3000">
+                <ol class="carousel-indicators">
+                  <li data-target="#virtualAssistantCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#virtualAssistantCarousel" data-slide-to="1"></li>
+                  <li data-target="#virtualAssistantCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="images/projects/va-ss1.png" alt="Assistant Screenshot 1">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="images/projects/va-ss2.png" alt="Assistant Screenshot 2">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="images/projects/va-ss3.png" alt="Assistant Screenshot 3">
+                  </div>
+                </div>
+              </div>
+              <div class="text mt-3">
+                <h3 class="heading"><a href="https://github.com/YashDabhekar/Virtual-Assistant-Gemini" target="_blank">AI Virtual Assistant (Gemini API)</a></h3>
+                
+                <p>
+                  An intelligent, interactive virtual assistant developed using the **Google Gemini API**. This project demonstrates integration with powerful large language models (LLMs) to provide real-time, context-aware responses and automate tasks.
+                </p>
+                <ul class="list-unstyled">
+                    <li><i class="icon-check"></i> **Technology:** Python, Gemini API, RESTful interaction patterns.</li>
+                    <li><i class="icon-check"></i> **Functionality:** Handles complex queries, code generation, and general knowledge retrieval.</li>
+                </ul>
+                
+                <p class="mt-4"><a href="https://virtual-assistant-1-ktnk.onrender.com" target="_blank" class="btn btn-primary py-2 px-3">View Project</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <div id="expenseTrackerCarousel" class="carousel slide block-20" data-ride="carousel" data-interval="3000">
+                <ol class="carousel-indicators">
+                  <li data-target="#expenseTrackerCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#expenseTrackerCarousel" data-slide-to="1"></li>
+                  <li data-target="#expenseTrackerCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="images/projects/expense-tracker-ss1.png" alt="Tracker Screenshot 1">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="images/projects/expense-tracker-ss2.png" alt="Tracker Screenshot 2">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="images/projects/expense-tracker-ss3.png" alt="Tracker Screenshot 3">
+                  </div>
+                </div>
+              </div>
+              <div class="text mt-3">
+                <h3 class="heading"><a href="https://github.com/YashDabhekar/Expense-Tracker" target="_blank">Expense Tracker (MERN Stack)</a></h3>
+                
+                <p>
+                  A full-stack personal finance management application built on the **MERN stack** (MongoDB, Express, React, Node.js). It enables users to **track daily income and expenses** and visualize spending patterns.
+                </p>
+                <ul class="list-unstyled">
+                    <li><i class="icon-check"></i> **Key Features:** User authentication, secure data storage via MongoDB, and dynamic charting for visualization.</li>
+                    <li><i class="icon-check"></i> **Technologies:** React, Node.js/Express, MongoDB.</li>
+                </ul>
+                
+                <p class="mt-4"><a href="https://github.com/Y-A-S-H-07/expense-tracker" target="_blank" class="btn btn-primary py-2 px-3">View Project on GitHub</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Contact Section -->
+<section id="contact-section" class="ftco-section contact-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <h1 class="big big-2">Contact</h1>
+        <h2 class="mb-4">Get in Touch</h2>
+        <p>Feel free to connect with me via any of the platforms below.</p>
+      </div>
+    </div>
+
+    <!-- First Row -->
+    <div class="row d-flex justify-content-center mb-4">
+      <div class="col-lg-3 col-md-4 col-sm-6 text-center contact-icon mb-4">
+        <a href="mailto:yashdabhekar007@gmail.com" target="_blank">
+          <i class="fas fa-envelope fa-3x mb-2"></i>
+          <p>yashdabhekar007@gmail.com</p>
+        </a>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 text-center contact-icon mb-4">
+        <a href="https://wa.me/919284372128" target="_blank">
+          <i class="fab fa-whatsapp fa-3x mb-2"></i>
+          <p>+91 9284372128</p>
+        </a>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 text-center contact-icon mb-4">
+        <a href="https://github.com/Y-A-S-H-07/" target="_blank">
+          <i class="fab fa-github fa-3x mb-2"></i>
+          <p>github.com/YashDabhekar</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- Second Row -->
+    <div class="row d-flex justify-content-center">
+      <div class="col-lg-3 col-md-4 col-sm-6 text-center contact-icon mb-4">
+        <a href="https://internshala.com/student/profile/YOUR_PROFILE_ID" target="_blank">
+          <i class="fas fa-graduation-cap fa-3x mb-2"></i>
+          <p>internshala.com/YashDabhekar</p>
+        </a>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 text-center contact-icon mb-4">
+        <a href="www.linkedin.com/in/yashdabhekar" target="_blank">
+          <i class="fab fa-linkedin fa-3x mb-2"></i>
+          <p>linkedin.com/in/YashDabhekar</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Font Awesome CDN for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- Contact Icon Hover Effect -->
+<style>
+.contact-icon a {
+  color: #333;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.contact-icon a:hover {
+  transform: translateY(-5px);
+  color: #007bff;
+}
+.contact-icon p {
+  margin-top: 5px;
+  font-size: 14px;
+  word-break: break-word;
+}
+</style>
+
+
+    <!-- Footer -->
+    <footer class="ftco-footer ftco-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>Yash Dabhekar | MERN Stack Developer</p>
+
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
+
+
